@@ -1,0 +1,100 @@
+---
+import CodeBlock from "../components/CodeBlock.astro";
+import Icon from "../components/icon.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout>
+  <div class="page">
+    <div class="page__hero">
+      <h1 class="page__title headline-large">
+        CASHER - платформа для создания полностью кастомизируемого
+        интернет-магазина
+      </h1>
+      <img src="/img/products.png" alt="products" />
+    </div>
+    <ul class="page__steps">
+      <li class="page__step title-medium">
+        <p>1. Установите node.js</p>
+        <a
+          href="https://nodejs.org/ru"
+          target="_blank"
+          class="nodejs page__nodejs code"
+        >
+          <div class="page__icon">
+            <Icon icon="nodejs" />
+          </div>
+          nodejs
+        </a>
+      </li>
+      <li class="page__step title-medium">
+        <p>2. Установите node.js</p>
+        <CodeBlock>
+          git clone git@github.com:gregor-tokarev/casher-core.git
+        </CodeBlock>
+      </li>
+      <li class="page__step title-medium">
+        <p>3.Установите пакеты</p>
+        <CodeBlock>npm ci</CodeBlock>
+      </li>
+      <li class="page__step title-medium">
+        <p>4. Запустите проект</p>
+        <CodeBlock>
+          npm run typeorm:run && npm run build && npm run start:prod
+        </CodeBlock>
+      </li>
+    </ul>
+  </div>
+</MainLayout>
+<style lang="scss">
+  .page {
+    max-width: 1180px;
+    margin: 0 auto;
+
+    &__hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    &__title {
+      width: 480px;
+      color: var(--gray-400);
+    }
+
+    &__steps {
+      margin: 0 auto;
+      max-width: 620px;
+      margin-top: 30px;
+    }
+
+    &__step {
+      color: var(--gray-300);
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__nodejs {
+      margin-top: 5px;
+    }
+
+    &__icon {
+      display: flex;
+      align-items: center;
+      margin-right: 5px;
+    }
+  }
+
+  .nodejs {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #21a366;
+    border-radius: 10px;
+    color: var(--gray-100);
+    text-decoration: none;
+  }
+</style>

@@ -1,0 +1,274 @@
+/* work-sans-regular - latin_latin-ext */
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/work-sans-v18-latin_latin-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* work-sans-500 - latin_latin-ext */
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/work-sans-v18-latin_latin-500.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* work-sans-600 - latin_latin-ext */
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/work-sans-v18-latin_latin-600.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* work-sans-800 - latin_latin-ext */
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/work-sans-v18-latin_latin-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+@mixin display-large {
+  font-family: "Work Sans", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin display-medium {
+  font-family: "Work Sans", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 56px;
+}
+
+@mixin display-small {
+  font-family: "Work Sans", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+@mixin headline-large {
+  font-family: "Work Sans", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+@mixin headline-medium {
+  font-family: "Work Sans", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+@mixin headline-small {
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+@mixin title-large {
+  font-family: "Work Sans", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+@mixin title-medium {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@mixin title-small {
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+@mixin label-large {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@mixin label-medium {
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+@mixin label-small {
+  font-family: "Work Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+@mixin body-large {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@mixin body-medium {
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@mixin body-small {
+  font-family: "Work Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+@mixin overline {
+  font-family: "Work Sans", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+@mixin caption {
+  font-family: "Work Sans", sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.display-large {
+  @include display-large;
+}
+
+.display-medium {
+  @include display-medium;
+}
+
+.display-small {
+  @include display-small;
+}
+
+.headline-large {
+  @include headline-large;
+}
+
+.headline-medium {
+  @include headline-medium;
+}
+
+.headline-small {
+  @include headline-small;
+}
+
+.title-large {
+  @include title-large;
+}
+
+.title-medium {
+  @include title-medium;
+}
+
+.title-small {
+  @include title-small;
+}
+
+.label-large {
+  @include label-large;
+}
+
+.label-medium {
+  @include label-medium;
+}
+
+.label-small {
+  @include label-small;
+}
+
+.body-large {
+  @include body-large;
+}
+
+.body-medium {
+  @include body-medium;
+}
+
+.body-small {
+  @include body-small;
+}
+
+.overline {
+  @include overline;
+}
+
+.caption {
+  @include caption;
+}
+
+@font-face {
+  font-family: "Jetbrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/jetbrains-mono-v18-latin-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jetbrains Mono";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/jetbrains-mono-v18-latin-500.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jetbrains Mono";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/jetbrains-mono-v18-latin-600.woff2") format("woff2");
+  font-display: swap;
+}
+
+@mixin code {
+  font-family: "Jetbrains Mono", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.code {
+  @include code;
+}

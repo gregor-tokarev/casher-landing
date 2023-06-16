@@ -1,0 +1,28 @@
+{
+  "name": "casher-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@astrojs/vue": "^2.2.1",
+    "astro": "^2.6.4",
+    "nanoid": "^4.0.2",
+    "reset-css": "^5.0.1",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "prettier-plugin-astro": "^0.10.0",
+    "sass": "^1.63.4"
+  }
+}

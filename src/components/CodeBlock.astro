@@ -1,0 +1,64 @@
+---
+import { nanoid } from "nanoid";
+import Icon from "./icon.astro";
+
+const componentId = nanoid(3);
+---
+
+<script>
+  const copyBlocks = document.querySelectorAll(".code-block");
+
+  function onCopy(event) {
+    const copyText = event.currentTarget.textContent;
+    navigator.clipboard.writeText(copyText.trim());
+
+    const copy = event.currentTarget.querySelector("[data-copy]");
+    const check = event.currentTarget.querySelector("[data-check]");
+
+    copy.style.display = "none";
+    check.style.display = "flex";
+    setTimeout(() => {
+      copy.style.display = "flex";
+      check.style.display = "none";
+    }, 2000);
+  }
+
+  copyBlocks.forEach((c) => {
+    c.addEventListener("click", onCopy);
+  });
+</script>
+
+<div class="code-block code" id={componentId}>
+  <slot />
+  <div class="code-block__copy">
+    <div data-copy>
+      <Icon icon="copy" />
+    </div>
+    <div data-check style="display: none;">
+      <Icon icon="check" />
+    </div>
+  </div>
+</div>
+
+<style lang="scss">
+  .code-block {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: var(--gray-400);
+    color: var(--gray-100);
+    border-radius: 10px;
+    user-select: none;
+
+    &__copy {
+      cursor: pointer;
+      margin-left: 10px;
+
+      > div {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+</style>

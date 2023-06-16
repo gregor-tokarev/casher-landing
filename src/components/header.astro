@@ -1,0 +1,80 @@
+---
+import Icon from "./icon.astro";
+---
+
+<header class="header">
+  <div class="header__inner">
+    <div class="header__left">
+      <Icon icon="logo" />
+      <h2 class="header__title title-large">casher</h2>
+    </div>
+    <div class="header__right">
+      <a
+        class="header__link title-medium"
+        href="https://t.me/gregor_tokarev"
+        target="_blank"
+      >
+        <div class="header__icon">
+          <Icon icon="telegram" />
+        </div>
+        telegram
+      </a>
+      <a
+        href="https://github.com/gregor-tokarev"
+        class="header__link title-medium"
+        target="_blank"
+      >
+        <div class="header__icon">
+          <Icon icon="github" />
+        </div>
+        github
+      </a>
+    </div>
+  </div>
+</header>
+
+<style lang="scss">
+  .header {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--gray-200);
+
+    &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+
+    &__left {
+      display: flex;
+      align-items: center;
+    }
+
+    &__right {
+      display: flex;
+      align-items: center;
+    }
+
+    &__title {
+      margin-left: 10px;
+    }
+
+    &__icon {
+      display: flex;
+      align-items: center;
+      margin-right: 5px;
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      color: var(--gray-400);
+      text-decoration: none;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+  }
+</style>
